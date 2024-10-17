@@ -6,29 +6,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viverium - Tu espacio de plantas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bladewind-ui@1.1.0/dist/bladewind.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bladewind-ui@1.1.0/dist/bladewind.min.js"></script>
-    <link rel="stylesheet" href="css/layout.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="{{ asset('css/layout.css') }}"> 
 </head>
 
 <body>
 
-    <header class="py-6">
-        <div class="container mx-auto text-center">
-            <h1 class="text-3xl font-bold">VIVERIUM</h1>
-            <p class="mt-2">Tu espacio personal para mantener todas tus plantas en su mejor cuidado</p>
-        </div>
+    <header>
+        <h1>Viverium</h1>
+        <p>Tu espacio personal para cultivar y cuidar tus plantas</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="{{ route('my-plants.index') }}">Mis Plantas</a></li>
+            <li><a href="{{ route('my-plants.create') }}">Añadir Planta</a></li>
+            <li><a href="#">Otra Opción</a></li>
+        </ul>
+    </nav>
 
-    @yield('content')
-
-
-    <footer class="py-4 mt-8">
-        <div class="container mx-auto text-center">
-            <p>&copy; {{ date('Y') }} Viverium. Todos los derechos reservados.</p>
+    <main>
+        <div class="container">
+            @yield('content')
         </div>
+    </main>
+
+    <footer>
+        <p>&copy; {{ date('Y') }} Viverium. Todos los derechos reservados.</p>
     </footer>
 
 </body>
