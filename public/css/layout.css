@@ -1,0 +1,20 @@
+
+body {
+    background: linear-gradient(to right, #85E3FF, #B9FBC0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+header div h1 {
+    color: antiquewhite;
+}
+
+header p {
+    margin-left: 10px;
+}
+
+header {
+   
+}
+
+footer {}
