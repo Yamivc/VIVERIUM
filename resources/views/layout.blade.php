@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viverium - Tu espacio de plantas</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
@@ -76,29 +77,32 @@
 
     </main>
 
-    
-
-<footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/" class="hover:underline">Viverium</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="/" class="hover:underline me-4 md:me-6">Home</a>
-        </li>
-        <li>
-            <a href="{{ route('my-plants.index') }}" class="hover:underline me-4 md:me-6">My Plants</a>
-        </li>
-        <li>
-            <a href="{{ route('my-plants.create') }}" class="hover:underline me-4 md:me-6">Add Plant</a>
-        </li>
-        <li>
-            <a href="https://github.com/Yamivc" class="hover:underline">Git Hub</a>
-        </li>
-    </ul>
-</footer>
 
 
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <footer
+        class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/"
+                class="hover:underline">Viverium</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="/" class="hover:underline me-4 md:me-6">Home</a>
+            </li>
+            <li>
+                <a href="{{ route('my-plants.index') }}" class="hover:underline me-4 md:me-6">My Plants</a>
+            </li>
+            <li>
+                <a href="{{ route('my-plants.create') }}" class="hover:underline me-4 md:me-6">Add Plant</a>
+            </li>
+            <li>
+                <a href="https://github.com/Yamivc" class="hover:underline">Git Hub</a>
+            </li>
+        </ul>
+    </footer>
+
+
+  
+
 
 </body>
 

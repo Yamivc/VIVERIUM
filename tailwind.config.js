@@ -3,12 +3,17 @@ module.exports = {
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
-    "./resources/**/*.vue",
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: { 
+      backgroundImage: theme => ({
+      'hero': "url('public/assets/images/4.jpg')",
+      
+  })
+  }
   },
+
   plugins: [
       require('flowbite/plugin')
   ],
