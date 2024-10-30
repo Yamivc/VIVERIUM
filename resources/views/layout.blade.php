@@ -33,7 +33,8 @@
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Viverium</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"
+             
+                <button type="button" onclick="window.location.href='{{ route('member.login') }}'"
                     class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-400">Get
                     started</button>
                 <button data-collapse-toggle="navbar-sticky" type="button"

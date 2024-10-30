@@ -112,4 +112,20 @@ return [
 
     'password_timeout' => env('AUTH_PASSWORD_TIMEOUT', 10800),
 
+    //new guard for your members
+    
+    'guards' => [
+        'member' => [
+            'driver' => 'session',
+            'provider' => 'members',
+        ],
+    ],
+
+    'providers' => [
+        'members' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Member::class,
+        ],
+    ],
+
 ];
